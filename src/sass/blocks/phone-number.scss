@@ -1,0 +1,10 @@
+.phone-number{
+  font-weight: bold;
+  @include font(14px, 16px);
+}
+
+.phone-number__text {
+  display: block;
+  font-weight: normal;
+  @include font(10px, 16px);
+}

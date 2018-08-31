@@ -1,0 +1,47 @@
+.user-nav {
+  width: 520px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.user-nav__login,
+.user-nav__currency,
+.user-nav__lang {
+  display: block;
+  position: relative;
+  padding: 0 20px;
+  text-decoration: none;
+  color: #0d3351;
+}
+
+.user-nav__login::after,
+.user-nav__currency::after,
+.user-nav__lang::after {
+  position: absolute;
+  content: "";
+  width: 8px;
+  height: 5px;
+  background-image: url(../img/down.png);
+  top: 10px;
+  right: 5px;
+}
+
+
+.user-nav__login::before,
+.user-nav__currency::before {
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 12px;
+  top: 6px;
+  left: 0;
+}
+
+.user-nav__login::before {
+  background-image: url(../img/user.png);
+}
+
+.user-nav__currency::before {
+  background-image: url(../img/rub.png);
+}

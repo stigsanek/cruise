@@ -1,0 +1,26 @@
+.page-header {
+  background-image: $header-background;
+  padding-top: 30px;
+  padding-bottom: 195px;
+  background-size: cover;
+}
+
+.page-header__user-menu {
+  margin-bottom: 15px;
+}
+
+.page-header__logo {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 15px;
+}
+
+.page-header__promo {
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+.page-header__button {
+  display: block;
+  margin: 0 auto;
+}

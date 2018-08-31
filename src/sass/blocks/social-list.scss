@@ -1,0 +1,28 @@
+.social-list {
+  @include reset;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.social-list__item {
+  padding-top: 5px;
+  margin-right: 10px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.social-list__link {
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-color: $link;
+  border-radius: 50%;
+}
+
+.social-list__link span {
+    @include visually-hidden;
+}

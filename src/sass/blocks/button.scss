@@ -1,0 +1,21 @@
+.button {
+  width: 202px;
+  @include font(14px, 48px);
+  outline: none;
+  color: #ffffff;
+  background-color: $btn-bg;
+  border: none;
+  text-align: center;
+
+  &:hover {
+    background-color: darken($btn-bg, 20%);
+  }
+
+  &:focus {
+    background-color: darken($btn-bg, 20%);
+  }
+
+  &:active {
+    background-color: darken($btn-bg, 10%);
+  }
+}

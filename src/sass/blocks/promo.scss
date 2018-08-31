@@ -1,0 +1,12 @@
+.promo {
+  text-align: center;
+  @include font(36px, 48px);
+  @include reset;
+}
+
+.promo__big {
+  display: block;
+  @include font(100px, 48px);
+  padding: 60px 0;
+  text-transform: uppercase;
+}

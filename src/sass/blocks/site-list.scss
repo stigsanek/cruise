@@ -1,0 +1,27 @@
+.site-list {
+  list-style: none;
+  @include reset;
+  padding: 65px 40px;
+  background-color: $site-list-background;
+  width: 420px;
+}
+
+.site-list__link {
+  text-decoration: none;
+  color: $munu-link;
+  @include font(18px, 48px);
+
+  &:hover {
+    color: darken($munu-link, 20%);
+  }
+
+  &:focus {
+    color: darken($munu-link, 20%);
+  }
+
+  &:active {
+    color: darken($munu-link, 10%);
+  }
+}
+
+
