@@ -6,7 +6,6 @@
   justify-content: space-between;
 }
 
-
 .catalog-list__catalog-item {
   margin-bottom: 20px;
 
@@ -16,5 +15,12 @@
 
   &:nth-last-child(2) {
     margin-bottom: 25px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 749px) {
+  .catalog-list__catalog-item {
+    margin-left: auto;
+    margin-right: auto;
   }
 }

@@ -11,6 +11,14 @@
   overflow: hidden;
 }
 
+@mixin wrapper {
+  margin: 0 auto;
+  min-width: 290px;
+  max-width: 1140px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 @mixin reset {
   margin: 0;
   padding: 0;

@@ -299,7 +299,7 @@ template {
 
 body {
   margin: 0;
-  min-width: 1674px;
+  min-width: 320px;
   background-color: #ffffff;
   font-family: "Roboto Slab", "Times New Roman", serif;
   font-size: 14px;
@@ -307,15 +307,18 @@ body {
   letter-spacing: 0.02em;
   color: #0d3351; }
 
-.wrapper {
-  margin: 0 auto;
-  width: 1140px; }
-
 .page-header {
   background-image: url("../img/sochi.png");
   padding-top: 30px;
   padding-bottom: 195px;
   background-size: cover; }
+
+.page-header__wrapper {
+  margin: 0 auto;
+  min-width: 290px;
+  max-width: 1140px;
+  padding-left: 15px;
+  padding-right: 15px; }
 
 .page-header__user-menu {
   margin-bottom: 15px; }
@@ -353,7 +356,8 @@ body {
 .main-nav__site-list {
   display: none;
   position: absolute;
-  top: 10px; }
+  top: 10px;
+  z-index: 100; }
 
 .site-list {
   list-style: none;
@@ -380,6 +384,10 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between; }
+
+@media (min-width: 320px) and (max-width: 749px) {
+  .user-nav {
+    display: none; } }
 
 .user-nav__login,
 .user-nav__currency,
@@ -445,6 +453,30 @@ body {
   padding: 60px 0;
   text-transform: uppercase; }
 
+@media (min-width: 320px) {
+  .promo {
+    font-size: 20px;
+    line-height: 48px; }
+  .promo__big {
+    font-size: 50px;
+    line-height: 48px; } }
+
+@media (min-width: 750px) {
+  .promo {
+    font-size: 26px;
+    line-height: 48px; }
+  .promo__big {
+    font-size: 72px;
+    line-height: 48px; } }
+
+@media (min-width: 1170px) {
+  .promo {
+    font-size: 36px;
+    line-height: 48px; }
+  .promo__big {
+    font-size: 100px;
+    line-height: 48px; } }
+
 .button {
   width: 202px;
   font-size: 14px;
@@ -463,6 +495,13 @@ body {
 
 .page-main {
   background-color: #f3f3f3; }
+
+.page-main__wrapper {
+  margin: 0 auto;
+  min-width: 290px;
+  max-width: 1140px;
+  padding-left: 15px;
+  padding-right: 15px; }
 
 .page-main__button {
   margin: 0 auto;
@@ -515,11 +554,40 @@ body {
   .catalog-list__catalog-item:nth-last-child(2) {
     margin-bottom: 25px; }
 
+@media (min-width: 320px) and (max-width: 749px) {
+  .catalog-list__catalog-item {
+    margin-left: auto;
+    margin-right: auto; } }
+
 .catalog-item {
   width: 555px;
   display: flex;
   flex-wrap: wrap;
   background-color: #ffffff; }
+
+@media (min-width: 320px) {
+  .catalog-item {
+    max-width: 100%; }
+  .catalog-item__image {
+    max-width: 100%; } }
+
+@media (min-width: 750px) {
+  .catalog-item {
+    max-width: 345px; }
+  .catalog-item__image {
+    max-width: 345px; } }
+
+@media (min-width: 900px) {
+  .catalog-item {
+    max-width: 425px; }
+  .catalog-item__image {
+    max-width: 425px; } }
+
+@media (min-width: 1170px) {
+  .catalog-item {
+    max-width: 555px; }
+  .catalog-item__image {
+    max-width: 555px; } }
 
 .catalog-item__wrap {
   padding: 30px 40px; }
@@ -559,22 +627,59 @@ body {
   opacity: 0.5; }
 
 .page-footer {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
   padding: 30px 0; }
 
+.page-footer__wrapper {
+  margin: 0 auto;
+  min-width: 290px;
+  max-width: 1140px;
+  padding-left: 15px;
+  padding-right: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+
+@media (min-width: 320px) {
+  .page-footer__wrapper {
+    flex-direction: column;
+    align-items: center; } }
+
+@media (min-width: 750px) {
+  .page-footer__wrapper {
+    flex-direction: row; } }
+
 .page-footer__social {
-  margin-left: -250px; }
+  margin-right: auto; }
+
+@media (min-width: 320px) and (max-width: 749px) {
+  .page-footer__social {
+    text-align: center;
+    margin-right: 0; } }
 
 .page-footer__copyright {
   display: block;
   padding-top: 5px; }
 
+.page-footer__contacts {
+  width: 250px; }
+
+@media (min-width: 320px) and (max-width: 749px) {
+  .page-footer__contacts {
+    text-align: center; } }
+
 .footer-nav-list {
+  width: 290px;
   margin: 0;
   padding: 0;
   list-style: none; }
+
+@media (min-width: 320px) and (max-width: 749px) {
+  .footer-nav-list {
+    display: none; } }
+
+@media (min-width: 750px) and (max-width: 900px) {
+  .footer-nav-list {
+    width: 220px; } }
 
 .footer-nav-list__item a {
   text-decoration: none;

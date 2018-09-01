@@ -5,6 +5,10 @@
   background-size: cover;
 }
 
+.page-header__wrapper {
+  @include wrapper;
+}
+
 .page-header__user-menu {
   margin-bottom: 15px;
 }

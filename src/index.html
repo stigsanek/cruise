@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Морские круизы</title>
   <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&amp;subset=cyrillic" rel="stylesheet">
@@ -11,7 +12,7 @@
 <body>
   <!--Разметка шапки страницы-->
   <header class="page-header">
-    <div class="wrapper">
+    <div class="page-header__wrapper">
       <div class="user-menu page-header__user-menu">
         <nav class="main-nav user-menu__main-nav ">
           <ul class="site-list main-nav__site-list">
@@ -42,7 +43,7 @@
   <!--Разметка основного содержимого-->
 
   <main class="page-main">
-    <div class="wrapper">
+    <div class="page-main__wrapper">
       <section class="catalog">
         <h2 class=catalog__header>Каталог круизов</h2>
         <div class="catalog__filter">
@@ -96,7 +97,6 @@
               </div>
             </article>
           </li>
-          <!--
           <li class="catalog-item catalog-list__catalog-item">
             <article>
               <img class="catalog-item__image" src="img/catalog-5.jpg" width="555" height="215" alt="Побережье Абрау-Дюрсо">
@@ -108,7 +108,6 @@
               </div>
             </article>
           </li>
-          -->
         </ul>
         <button class="button page-main__button" type="button">Больше круизов</button>
       </section>
@@ -117,8 +116,9 @@
   <!---->
 
   <!--Разметка подвала-->
-  <div class="wrapper">
-    <footer class="page-footer">
+
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
       <ul class="footer-nav-list page-footer__footer-nav-list">
         <li class="footer-nav-list__item"><a href="#">Вход для партнеров</a></li>
         <li class="footer-nav-list__item"><a href="#">О компании</a></li>
@@ -139,9 +139,9 @@
         </div>
         <span class="page-footer__copyright">&copy; 2016 ООО "Городские круизы"</span>
       </div>
+    </div>
+  </footer>
 
-    </footer>
-  </div>
   <!---->
 </body>
 

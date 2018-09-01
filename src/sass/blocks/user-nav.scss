@@ -5,6 +5,12 @@
   justify-content: space-between;
 }
 
+@media (min-width: 320px) and (max-width: 749px) {
+  .user-nav {
+    display: none;
+  }
+}
+
 .user-nav__login,
 .user-nav__currency,
 .user-nav__lang {

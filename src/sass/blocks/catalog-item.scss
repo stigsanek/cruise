@@ -5,6 +5,46 @@
   background-color: #ffffff;
 }
 
+@media (min-width: 320px) {
+  .catalog-item {
+    max-width: 100%;
+  }
+
+  .catalog-item__image {
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 750px) {
+  .catalog-item {
+    max-width: 345px;
+  }
+
+  .catalog-item__image {
+    max-width: 345px;
+  }
+}
+
+@media (min-width: 900px) {
+  .catalog-item {
+    max-width: 425px;
+  }
+
+  .catalog-item__image {
+    max-width: 425px;
+  }
+}
+
+@media (min-width: 1170px) {
+  .catalog-item {
+    max-width: 555px;
+  }
+
+  .catalog-item__image {
+    max-width: 555px;
+  }
+}
+
 
 .catalog-item__wrap {
   padding: 30px 40px;
