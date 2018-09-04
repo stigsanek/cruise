@@ -1,11 +1,11 @@
 .user-nav {
-  width: 520px;
+  width: 515px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
-@media (min-width: 320px) and (max-width: 749px) {
+@media (max-width: 749px) {
   .user-nav {
     display: none;
   }
@@ -16,7 +16,7 @@
 .user-nav__lang {
   display: block;
   position: relative;
-  padding: 0 20px;
+  padding: 0 15px;
   text-decoration: none;
   color: #0d3351;
 }
@@ -29,7 +29,7 @@
   width: 8px;
   height: 5px;
   background-image: url(../img/down.png);
-  top: 10px;
+  top: 11px;
   right: 5px;
 }
 

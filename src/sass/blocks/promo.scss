@@ -7,36 +7,28 @@
 .promo__big {
   display: block;
   @include font(100px, 48px);
-  padding: 60px 0;
+  padding: 40px 0 60px 0;
   text-transform: uppercase;
+  letter-spacing: -0.03em;
 }
 
-@media (min-width: 320px) {
+@media (min-width: 320px) and (max-width: 749px) {
   .promo {
     @include font(20px, 48px);
   }
 
   .promo__big {
     @include font(50px, 48px);
+    padding: 15px 0 35px 0;
   }
 }
 
-@media (min-width: 750px) {
+@media (min-width: 750px) and (max-width: 1169px) {
   .promo {
     @include font(26px, 48px);
   }
 
   .promo__big {
     @include font(72px, 48px);
-  }
-}
-
-@media (min-width: 1170px) {
-  .promo {
-    @include font(36px, 48px);
-  }
-
-  .promo__big {
-    @include font(100px, 48px);
   }
 }

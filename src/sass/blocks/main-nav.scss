@@ -1,11 +1,16 @@
 .main-nav {
+  &::before {
+    content: "";
+    position: absolute;
     background-image: url("../img/menu.png");
     width: 22px;
     height: 16px;
+  }
 
   &:hover .main-nav__site-list {
     display: block;
   }
+
   &:focus .main-nav__site-list {
     display: block;
   }
@@ -17,5 +22,3 @@
   top: 10px;
   z-index: 100;
 }
-
-

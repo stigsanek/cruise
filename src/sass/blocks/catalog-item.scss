@@ -1,11 +1,11 @@
 .catalog-item {
-  width: 555px;
+  max-width: 555px;
   display: flex;
   flex-wrap: wrap;
   background-color: #ffffff;
 }
 
-@media (min-width: 320px) {
+@media (min-width: 320px) and (max-width: 749px) {
   .catalog-item {
     max-width: 100%;
   }
@@ -15,58 +15,49 @@
   }
 }
 
-@media (min-width: 750px) {
+@media (min-width: 750px) and (max-width: 1169px) {
   .catalog-item {
-    max-width: 345px;
+    max-width: 48%;
   }
-
   .catalog-item__image {
-    max-width: 345px;
+    max-width: 100%;
   }
 }
-
-@media (min-width: 900px) {
-  .catalog-item {
-    max-width: 425px;
-  }
-
-  .catalog-item__image {
-    max-width: 425px;
-  }
-}
-
-@media (min-width: 1170px) {
-  .catalog-item {
-    max-width: 555px;
-  }
-
-  .catalog-item__image {
-    max-width: 555px;
-  }
-}
-
 
 .catalog-item__wrap {
   padding: 30px 40px;
 }
 
+@media (min-width: 320px) and (max-width: 749px) {
+  .catalog-item__wrap {
+    padding: 30px 24px;
+  }
+}
+
+@media (min-width: 750px) and (max-width: 1169px) {
+  .catalog-item__wrap {
+    padding: 30px 33px;
+  }
+}
+
 .catalog-item__link {
   display: block;
   text-decoration: none;
-  @include font(18px, 48px);
+  @include font(18px, 24px);
   color: $catalog-link;
+  margin-bottom: 10px;
 
-    &:hover {
-      color: darken($catalog-link, 20%);
-    }
+  &:hover {
+    color: darken($catalog-link, 20%);
+  }
 
-    &:focus {
-      color: darken($catalog-link, 20%);
-    }
+  &:focus {
+    color: darken($catalog-link, 20%);
+  }
 
-    &:active {
-      color: darken($catalog-link, 10%);
-    }
+  &:active {
+    color: darken($catalog-link, 10%);
+  }
 }
 
 .catalog-item__text {
@@ -84,6 +75,22 @@
   margin-right: 30px;
   vertical-align: middle;
   padding-top: 20px;
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 749px) {
+  .catalog-item__price {
+    margin-right: 3px;
+  }
+}
+
+@media (min-width: 750px) and (max-width: 1169px) {
+  .catalog-item__price {
+    margin-right: 18px;
+  }
 }
 
 .catalog-item__price--old {

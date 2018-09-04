@@ -3,7 +3,13 @@
   @include reset;
   padding: 65px 40px;
   background-color: $site-list-background;
-  width: 420px;
+  width: 340px;
+}
+
+@media (max-width: 749px) {
+  .site-list {
+    max-width: 65vw;
+  }
 }
 
 .site-list__link {
@@ -23,5 +29,3 @@
     color: darken($munu-link, 10%);
   }
 }
-
-
