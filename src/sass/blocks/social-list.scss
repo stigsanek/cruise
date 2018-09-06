@@ -21,6 +21,23 @@
   height: 30px;
   background-color: $link;
   border-radius: 50%;
+  background-image: url(../img/social_sprites.png);
+}
+
+.social-list__link--vk {
+  background-position: -39px 0;
+}
+
+.social-list__link--ok {
+  background-position: -72px -3px;
+}
+
+.social-list__link--yt {
+  background-position: -2px -5px;
+}
+
+.social-list__link--inst {
+  background-position: -2px -40px;
 }
 
 .social-list__link span {

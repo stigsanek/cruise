@@ -308,9 +308,24 @@ body {
 
 .page-header {
   background-image: url("../img/sochi.png");
+  background-color: #d3e7fa;
   padding-top: 30px;
   padding-bottom: 195px;
   background-size: cover; }
+
+.page-header::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 240px;
+  background-image: url("../img/line-min.png");
+  background-repeat: no-repeat;
+  background-position: top 0 left 50%; }
+
+@media (min-width: 1170px) {
+  .page-header::after {
+    height: 300px;
+    background-image: url("../img/line.png"); } }
 
 .page-header__wrapper {
   margin: 0 auto;
@@ -343,24 +358,43 @@ body {
 .user-menu__main-nav {
   position: relative; }
 
-.main-nav::before {
-  content: "";
-  position: absolute;
-  background-image: url("../img/menu.png");
-  width: 22px;
-  height: 16px; }
-
-.main-nav:hover .main-nav__site-list {
-  display: block; }
-
-.main-nav:focus .main-nav__site-list {
-  display: block; }
-
 .main-nav__site-list {
   display: none;
   position: absolute;
-  top: 10px;
+  top: 30px;
   z-index: 100; }
+
+.main-nav--open {
+  background-image: url("../img/menu.png");
+  width: 22px;
+  height: 16px;
+  border: none;
+  background-color: transparent; }
+
+.main-nav--close {
+  background: none;
+  border: none;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  z-index: 1000;
+  top: 20px;
+  right: 20px;
+  color: #ffffff;
+  background-image: linear-gradient(45deg, transparent 47%, #ffffff 47%, #ffffff 53%, transparent 53%, transparent 100%), linear-gradient(-45deg, transparent 47%, #ffffff 47%, #ffffff 53%, transparent 53%, transparent 100%); }
+
+.main-nav--open span,
+.main-nav--close span {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden; }
 
 .site-list {
   list-style: none;
@@ -385,6 +419,9 @@ body {
     color: #cccccc; }
   .site-list__link:active {
     color: #e6e6e6; }
+
+.site-list--open {
+  display: block; }
 
 .user-nav {
   width: 515px;
@@ -567,6 +604,7 @@ body {
   justify-content: space-between; }
 
 .catalog-list__catalog-item {
+  position: relative;
   margin-bottom: 20px; }
   .catalog-list__catalog-item:nth-last-child(1) {
     margin-bottom: 25px; }
@@ -651,6 +689,28 @@ body {
   line-height: 48px;
   text-decoration: line-through;
   opacity: 0.5; }
+
+.catalog-item__label {
+  width: 90px;
+  height: 100px;
+  text-align: center;
+  background-image: url("../img/tag.png");
+  position: absolute;
+  top: -7px;
+  right: 30px;
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase; }
+  .catalog-item__label--red {
+    background-image: url("../img/tag-red.png"); }
+
+.catalog-item__label span {
+  display: block;
+  margin-top: 25px; }
+
+.catalog-item__label--red span {
+  margin-top: 35px; }
 
 .page-footer {
   padding: 30px 0; }
@@ -737,7 +797,20 @@ body {
   width: 30px;
   height: 30px;
   background-color: #0d3351;
-  border-radius: 50%; }
+  border-radius: 50%;
+  background-image: url(../img/social_sprites.png); }
+
+.social-list__link--vk {
+  background-position: -39px 0; }
+
+.social-list__link--ok {
+  background-position: -72px -3px; }
+
+.social-list__link--yt {
+  background-position: -2px -5px; }
+
+.social-list__link--inst {
+  background-position: -2px -40px; }
 
 .social-list__link span {
   position: absolute;

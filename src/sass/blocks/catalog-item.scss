@@ -19,6 +19,7 @@
   .catalog-item {
     max-width: 48%;
   }
+
   .catalog-item__image {
     max-width: 100%;
   }
@@ -97,4 +98,30 @@
   @include font(18px, 48px);
   text-decoration: line-through;
   opacity: 0.5;
+}
+
+.catalog-item__label {
+  width: 90px;
+  height: 100px;
+  text-align: center;
+  background-image: url("../img/tag.png");
+  position: absolute;
+  top: -7px;
+  right: 30px;
+  color: #ffffff;
+  @include font(14px, 18px);
+  text-transform: uppercase;
+
+  &--red {
+    background-image: url("../img/tag-red.png");
+  }
+}
+
+.catalog-item__label span {
+  display: block;
+  margin-top: 25px;
+}
+
+.catalog-item__label--red span {
+  margin-top: 35px;
 }
