@@ -1,26 +1,16 @@
 .catalog-item {
-  max-width: 555px;
+  max-width: 48%;
   display: flex;
   flex-wrap: wrap;
   background-color: #ffffff;
 }
 
+.catalog-item__image {
+    max-width: 100%;
+  }
+
 @media (min-width: 320px) and (max-width: 749px) {
   .catalog-item {
-    max-width: 100%;
-  }
-
-  .catalog-item__image {
-    max-width: 100%;
-  }
-}
-
-@media (min-width: 750px) and (max-width: 1169px) {
-  .catalog-item {
-    max-width: 48%;
-  }
-
-  .catalog-item__image {
     max-width: 100%;
   }
 }
