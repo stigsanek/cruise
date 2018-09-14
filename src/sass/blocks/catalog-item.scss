@@ -5,6 +5,10 @@
   background-color: #ffffff;
 }
 
+.catalog-item__header {
+  @include visually-hidden;
+}
+
 .catalog-item__image {
     max-width: 100%;
   }
